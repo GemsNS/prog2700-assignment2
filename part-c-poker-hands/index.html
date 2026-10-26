@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  Joel Al Gohri Sayed - W0514987
+  PROG2700 Assignment 2 - Part C: Poker Hands
+  AI note: I used AI to help me build and understand this. I went through every line and can explain how it works.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poker Hands - Joel Al Gohri Sayed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Poker Hands</h1>
+    <button id="themeButton">Dark Mode</button>
+  </header>
+
+  <!-- the 5 card images. main.js sets the src of each one -->
+  <div id="hand">
+    <img id="card1" class="card" src="" alt="card 1">
+    <img id="card2" class="card" src="" alt="card 2">
+    <img id="card3" class="card" src="" alt="card 3">
+    <img id="card4" class="card" src="" alt="card 4">
+    <img id="card5" class="card" src="" alt="card 5">
+  </div>
+
+  <!-- card names and the poker hand go here -->
+  <p id="cardNames">Loading cards...</p>
+  <h2 id="handName"></h2>
+
+  <!-- buttons for my enhancements -->
+  <div id="buttons">
+    <button id="drawButton">Draw Again</button>
+    <button id="sortSuitButton">Sort by Suit</button>
+    <button id="sortValueButton">Sort by Value</button>
+  </div>
+
+  <p id="remaining">Cards Remaining: </p>
+  <p id="message"></p>
+
+  <!-- testing links, one for each poker hand -->
+  <h3>Testing Links</h3>
+  <!-- each link loads a hand from my instructor's test API -->
+  <ul id="testLinks">
+    <li><a href="index.html?test=royalflush">Royal Flush</a></li>
+    <li><a href="index.html?test=straightflush">Straight Flush</a></li>
+    <li><a href="index.html?test=fourofakind">Four of a Kind</a></li>
+    <li><a href="index.html?test=fullhouse">Full House</a></li>
+    <li><a href="index.html?test=flush">Flush</a></li>
+    <li><a href="index.html?test=straight">Straight</a></li>
+    <li><a href="index.html?test=threeofakind">Three of a Kind</a></li>
+    <li><a href="index.html?test=twopair">Two Pair</a></li>
+    <li><a href="index.html?test=onepair">One Pair</a></li>
+    <li><a href="index.html?test=highcard">High Card</a></li>
+    <li><a href="index.html">Random Hand</a></li>
+  </ul>
+
+  <script src="main.js"></script>
+</body>
+</html>
